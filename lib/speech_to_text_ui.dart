@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_code/dialog_inut.dart';
+import 'package:test_code/dialog_input.dart';
 import 'package:test_code/list_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'mricro_component.dart';
@@ -36,7 +36,7 @@ class SpeechToTextUI extends StatelessWidget {
                     child: MicroComponent(
                       status: controller.isListening.value,
                       onPressed: () {
-                       controller.startSpeech(start: true);
+                       controller.startSpeech(start: true,forced: true);
                       },
                       onPressedEnd: () {
                         controller.stopListening();
